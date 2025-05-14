@@ -1,25 +1,53 @@
-# Tech-Support-Chatbot-Using-Transformer-Models
+# 🤖 Tech-Support-Chatbot Using Transformer Models
 
-Project Description
-This project explores the use of pre-trained transformer models for text classification tasks. The models tested include BERT, ALBERT, and RoBERTa. The objective was to compare the performance of these models on a specific dataset and evaluate their effectiveness in text classification.
+## 📄 Project Description
 
-Model Performance
-BERT: Achieved an accuracy of 0.94, delivering excellent results on the dataset.
+This project explores the use of **pre-trained transformer models** for text classification in a technical support chatbot context. The models evaluated include:
 
-ALBERT: Achieved an accuracy of 0.93, providing competitive performance similar to BERT.
+- **BERT**
+- **ALBERT**
+- **RoBERTa**
 
-RoBERTa: Encountered significant issues with an accuracy of 0.03, suggesting potential problems with configuration, data preprocessing, or model parameters. This low performance indicates a need for further investigation into the causes behind this discrepancy.
+The objective was to compare their performance on a shared dataset and assess their effectiveness in classifying support-related text inputs.
 
-Challenges and Future Work
--RoBERTa’s Low Accuracy: The main challenge faced in this project was RoBERTa's unexpectedly low performance. Potential causes could include incorrect model configurations, issues with data preprocessing (e.g., tokenization), or hyperparameter misconfigurations. This warrants a deeper exploration into why RoBERTa underperformed compared to the other models.
+---
 
--Data Preprocessing: Ensuring that the preprocessing pipeline, such as tokenization and handling of special tokens, is consistent across all models is crucial for achieving optimal performance. Any differences in tokenization or handling of input data may affect model accuracy.
+## 📊 Model Performance
 
--Hyperparameter Tuning: Further tuning of hyperparameters, including learning rate, batch size, and number of training epochs, may improve model performance. It is particularly important to adjust these parameters to suit the characteristics of the dataset used.
+| Model    | Accuracy | Notes                                                      |
+|----------|----------|------------------------------------------------------------|
+| BERT     | 0.94     | Delivered excellent results and high reliability           |
+| ALBERT   | 0.93     | Slightly lower than BERT but still strong and consistent   |
+| RoBERTa  | 0.03     | Significantly underperformed due to possible misconfiguration |
 
-Future Work
--Further investigation into RoBERTa’s poor performance and re-evaluating model configurations to ensure proper implementation.
+---
 
--Hyperparameter optimization for all models, especially RoBERTa, to improve accuracy.
+## 🚧 Challenges
 
--Experiment with advanced preprocessing techniques and model fine-tuning to enhance overall results and achieve more consistent performance across models.
+- **RoBERTa’s Low Accuracy**  
+  The most notable challenge was RoBERTa's poor performance. Possible causes include:
+  - Misconfiguration of the model
+  - Inconsistent data preprocessing (e.g., tokenization)
+  - Incorrect hyperparameters
+
+- **Data Preprocessing Consistency**  
+  Preprocessing steps such as tokenization and special token handling need to be **uniform across all models**. Any mismatch can negatively affect performance.
+
+- **Hyperparameter Tuning**  
+  Key hyperparameters like learning rate, batch size, and training epochs need further tuning to optimize results, particularly for underperforming models.
+
+---
+
+## 🔮 Future Work
+
+- Reinvestigate **RoBERTa’s configuration** and preprocessing pipeline  
+- Apply **hyperparameter optimization** to all models (especially RoBERTa)  
+- Experiment with **advanced preprocessing** and **fine-tuning techniques**  
+- Evaluate performance on **additional datasets** to improve generalizability
+
+---
+
+## 📌 Summary
+
+This project highlights the effectiveness of BERT-based models for text classification tasks in chatbot applications. Although RoBERTa underperformed, further investigation may help uncover and fix the root causes.
+
